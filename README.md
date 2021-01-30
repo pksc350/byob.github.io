@@ -45,9 +45,17 @@
 
 - Reviews should have a rating scale (1-5), include a description of why it is rated that way, and a photo from those who are rating it (photo will not be required)
 
+### Log-In Page
+
+- The title page will include a space to log-in via Google to access your personal BYOB account
+
 ### Future goals:
 
 - Cocktail / Mocktail toggle
   - If mocktail is selected in “add drink” it will populate on the drink’s main descriptor, so when users are viewing drinks, they can spot out the mocktails instead of clicking on them
 - Search recipes with a keyword
 - Show recipe rating on “All Drinks” screen in container
+
+## Wireframes
+
+![](public/images/BYOB-title.png)
