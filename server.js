@@ -5,6 +5,9 @@ const PORT = 3300;
 
 const app = express();
 
+//Require Routes
+const homeRouter = require("./routes/homescreen");
+
 //Set Views
 app.set("view engine", "ejs");
 
@@ -14,6 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
 //Mount Routes
+app.use("/", homeRouter);
 
 //App listen
 app.listen(PORT, () => {
