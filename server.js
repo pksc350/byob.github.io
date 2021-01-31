@@ -7,6 +7,7 @@ const app = express();
 
 //Require Routes
 const homeRouter = require("./routes/homescreen");
+const drinksRouter = require("./routes/drinks");
 
 //Set Views
 app.set("view engine", "ejs");
@@ -18,6 +19,7 @@ app.use(express.static("public"));
 
 //Mount Routes
 app.use("/", homeRouter);
+app.use("/drinks", drinksRouter);
 
 //App listen
 app.listen(PORT, () => {
