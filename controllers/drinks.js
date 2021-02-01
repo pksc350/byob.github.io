@@ -3,6 +3,7 @@ const Drink = require("../models/drink");
 module.exports = {
   index,
   new: newDrink,
+  create,
 };
 
 function index(req, res) {
@@ -13,4 +14,12 @@ function index(req, res) {
 
 function newDrink(req, res) {
   res.render("drinks/new", { title: "Add Drink" });
+}
+
+function create(req, res) {
+  const drink = new Drink(req.body);
+  drink.save(function (err) {
+    if (err) return console.log(err);
+    res.redirect("/drinks");
+  });
 }

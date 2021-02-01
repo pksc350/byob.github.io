@@ -1,1 +1,20 @@
-<h1>Hello!</h1>
+<table id="drink-list">
+    <thead>
+        <tr>
+            <th>Drink Name</th>
+            <th>Ingredients</th>
+            <th>Directions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% drinks.forEach(function(d){ %>
+            <tr>
+                <td><%= d.title %></td>
+                <td><%= d.ingredients %></td>
+                <td><%= d.directions %></td>
+                <td><a href="/drinks/<%= d._id %>">Details</a></td>
+            </tr>
+            <% }); %>
+    </tbody>
+    </table>

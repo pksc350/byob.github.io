@@ -5,6 +5,9 @@ const PORT = 3300;
 
 const app = express();
 
+//requiring the database
+require("./config/database");
+
 //Require Routes
 const homeRouter = require("./routes/homescreen");
 const drinksRouter = require("./routes/drinks");
