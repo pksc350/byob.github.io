@@ -4,6 +4,7 @@ module.exports = {
   index,
   new: newDrink,
   create,
+  show,
 };
 
 function index(req, res) {
@@ -21,5 +22,11 @@ function create(req, res) {
   drink.save(function (err) {
     if (err) return console.log(err);
     res.redirect("/drinks");
+  });
+}
+
+function show(req, res) {
+  Drink.findById(req.params.id, function (err, drink) {
+    res.render("drinks/show", { title: `${req.params.title}`, drink });
   });
 }
