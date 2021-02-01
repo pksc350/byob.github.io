@@ -5,14 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='/css/style.css' />
-  <title>BYOB</title>
+  <title><%= title %></title>
 </head>
 <body>
-    
-    <h1 class="app-title">Be</h1>
-    <h1 class="app-title">Your</h1>
-    <h1 class="app-title">Own</h1>
-    <h1 class="app-title">Bartender</h1>
-
-      </body>
-      </html>
+  <nav>
+    <a href="/drinks/add" <%- title === 'Add Drink' ? 'class="active"' : '' %>>Add Drink</a>
+    <a href="/drinks" <%- title === 'All Drinks' ? 'class="active"' : '' %>>All Drinks</a>
+  </nav>
+  <main>

@@ -1,3 +1,5 @@
+<%- include('../partials/header') %>
+
 <form id="new-drink" action="/drinks" method="POST">
 <label>Ingredients</label>
 <input type="text" name="ingredients">
@@ -9,3 +11,5 @@
 <input type="text" name="title">
 <input type="submit" value="Add Drink">
 </form>
+
+<%- include('../partials/footer') %>
