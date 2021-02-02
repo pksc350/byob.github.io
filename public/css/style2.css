@@ -1,0 +1,74 @@
+/* W3 Schools https://www.w3schools.com/howto/howto_js_sidenav.asp */
+.contain {
+  width: 90%;
+  min-width: 500px;
+  margin: auto;
+}
+
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d1d2e3;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "yusei magic";
+  font-size: 70px;
+}
+
+.links {
+  font-family: "yusei magic";
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  width: 400px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+}
+
+button {
+  width: 100px;
+  margin-left: 300px;
+  margin-top: 5px;
+  height: 40px;
+  font-family: "yusei magic";
+  background-color: #035aa6;
+  color: white;
+}
+
+label {
+  font-family: "yusei magic";
+  font-size: 20px;
+}
+
+#submit {
+  width: 100px;
+  margin-left: 300px;
+  margin-top: 5px;
+  height: 40px;
+  font-family: "yusei magic";
+  background-color: #a672a2;
+  color: white;
+  font-size: 25px;
+}
+
+.type-here {
+  height: 50px;
+  font-family: "kalam";
+  font-size: 20px;
+}

@@ -1,0 +1,87 @@
+/* W3 Schools https://www.w3schools.com/howto/howto_js_sidenav.asp */
+.contain {
+  width: 90%;
+  min-width: 500px;
+  margin: auto;
+}
+
+body {
+  background-image: url("https://miro.medium.com/max/11520/1*wRSrqe_WdsPsv4XdHDou6Q.jpeg");
+  background-size: cover;
+  width: auto;
+}
+
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d1d2e3;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.container {
+  height: 100px;
+  width: 500px;
+  background-color: #5cadbe;
+  margin-top: 10px;
+  margin-left: 200px;
+  border-radius: 25px;
+  align-content: center;
+}
+
+.drink-data {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.drink-name {
+  position: absolute;
+  font-family: "kalam";
+  font-size: 60px;
+}
+
+.details {
+  margin-top: 50px;
+  padding-left: 300px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "yusei magic";
+  font-size: 70px;
+  color: white;
+}
+
+.all-drink-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  font-family: "yusei magic";
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.details a:link {
+  color: white;
+  font-family: "yusei magic";
+}
+
+.details a:visited {
+  color: white;
+  font-family: "yusei magic";
+}
+
+.details a:active {
+  color: white;
+  font-family: "yusei magic";
+}

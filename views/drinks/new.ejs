@@ -1,15 +1,19 @@
-<%- include('../partials/header') %>
+<%- include('../partials/header2') %>
+
+<div class="container">
+<h1>Add A Drink!</h1>
 
 <form id="new-drink" action="/drinks" method="POST">
-<label>Ingredients</label>
-<input type="text" name="ingredients">
+    <label id="ingredients">Ingredients</label>
+<input type="text" name="ingredients" class="type-here">
 <button id="add">Add Ingredient</button>
-<label>Directions</label>
-<input type="text" name="directions">
+<label id="directions">Directions</label>
+<input type="text" name="directions" class="type-here">
 <button id="add">Add Step</button>
-<label>Name your drink!</label>
-<input type="text" name="title">
-<input type="submit" value="Add Drink">
+<label id="name-drink">Name your drink!</label>
+<input type="text" name="title" class="type-here">
+<input type="submit" value="Submit" id="submit">
 </form>
+</div>
 
 <%- include('../partials/footer') %>

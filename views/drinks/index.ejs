@@ -1,24 +1,18 @@
 <%- include('../partials/header') %>
 
-<table id="drink-list">
-    <thead>
-        <tr>
-            <th>Drink Name</th>
-            <th>Ingredients</th>
-            <th>Directions</th>
-        </tr>
-    </thead>
+<div class='all-drink-page'>
+<h1 id="drinks-list">All Drinks</h1>
 
-    <tbody>
+
         <% drinks.forEach(function(d){ %>
-            <tr>
-                <td><%= d.title %></td>
-                <td><%= d.ingredients %></td>
-                <td><%= d.directions %></td>
-                <td><a href="/drinks/<%= d._id %>">Details</a></td>
-            </tr>
+            <div class="drink container">
+            <ul class="drink-data">
+                <li class="drink-name"><%= d.title %></td>
+                <li class="details"><a href="/drinks/<%= d._id %>">Details</a></li>
+                </ul>
+            </div>
             <% }); %>
-    </tbody>
-    </table>
+
+        </div>
 
     <%- include('../partials/footer') %>
