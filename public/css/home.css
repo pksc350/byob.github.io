@@ -1,0 +1,71 @@
+.container {
+  width: 90%;
+  min-width: 500px;
+  margin: auto;
+}
+
+body {
+  background-image: url("https://miro.medium.com/max/11520/1*wRSrqe_WdsPsv4XdHDou6Q.jpeg");
+  background-size: cover;
+  width: auto;
+}
+
+div.transbox {
+  background-color: #ffffff;
+  opacity: 0.6;
+  background-size: cover;
+  height: 800px;
+}
+
+div.transbox h1 {
+  color: #000000;
+}
+
+#martini {
+  position: abolsute;
+  height: 140px;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+#lemon {
+  position: absolute;
+  height: 130px;
+  margin-left: 200px;
+  top: 350px;
+}
+
+#be {
+  position: absolute;
+  margin-left: 50px;
+}
+
+#your {
+  position: absolute;
+  margin-left: 200px;
+  top: 240px;
+}
+
+#own {
+  position: absolute;
+  margin-left: 340px;
+  top: 380px;
+}
+
+#bartender {
+  position: absolute;
+  font-size: 120px;
+  margin-left: 100px;
+}
+
+.app-title {
+  font-family: "yusei magic";
+  font-size: 75px;
+}
+
+#bartender-img {
+  position: absolute;
+  height: 300px;
+  margin-left: 400px;
+  margin-top: 25px;
+}
