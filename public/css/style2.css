@@ -41,14 +41,15 @@ form {
   flex-flow: column;
 }
 
-button {
-  width: 100px;
+.add-btn {
+  width: 130px;
   margin-left: 300px;
   margin-top: 5px;
   height: 40px;
   font-family: "yusei magic";
   background-color: #035aa6;
   color: white;
+  text-align: center;
 }
 
 label {
