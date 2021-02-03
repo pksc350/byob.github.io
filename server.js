@@ -11,6 +11,7 @@ require("./config/database");
 //Require Routes
 const homeRouter = require("./routes/homescreen");
 const drinksRouter = require("./routes/drinks");
+const reviewsRouter = require("./routes/reviews");
 
 //Set Views
 app.set("view engine", "ejs");
@@ -24,6 +25,7 @@ app.use(express.static(__dirname + "/public"));
 //Mount Routes
 app.use("/", homeRouter);
 app.use("/drinks", drinksRouter);
+app.use("/", reviewsRouter);
 
 //App listen
 app.listen(PORT, () => {

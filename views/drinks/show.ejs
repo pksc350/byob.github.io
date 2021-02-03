@@ -2,15 +2,26 @@
 
 <section id="show-page">
     <div id="drink-title"><%= drink.title %></div>
+
+
     <div id="ingredient-title" class='showhead'>Ingredients</div>
-    <div class="showlist"><%= drink.ingredients %></div>
+    <ul>
+    <% drink.ingredients.forEach(function(i) { %>
+    <div class="showlist"><li><%= i %></li></div>
+    <% }) %>        
+</ul>
+
     <div id="directions-title" class='showhead'>Directions</div>
-    <div class="showlist"><%= drink.directions %></div>
+    <ol>
+        <% drink.directions.forEach(function(d) { %>
+    <div class="showlist"><li><%= d %></li></div>
+    <% }) %>
+    </ol>
 </section>
 
 <section>
     <h1 class="showhead">Add Review</h1>
-    <form id="add-review" method="POST" action="/drink/<%= drink._id %>">
+    <form id="add-review" method="POST" action="/drink/<%= drink._id %>/reviews">
     <label>Review:</label>
     <textarea name="content" class="type-here"></textarea>
     <label>Rating:</label>
