@@ -5,6 +5,7 @@ module.exports = {
   new: newDrink,
   create,
   show,
+  remove,
 };
 
 function index(req, res) {
@@ -28,5 +29,12 @@ function create(req, res) {
 function show(req, res) {
   Drink.findById(req.params.id, function (err, drink) {
     res.render("drinks/show", { title: `${req.params.title}`, drink });
+  });
+}
+
+function remove(req, res, next) {
+  Drink.findByIdAndDelete(req.params.id).then(() => {
+    res.redirect("/drinks");
+    next();
   });
 }

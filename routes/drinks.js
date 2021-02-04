@@ -8,5 +8,6 @@ router.get("/", drinksCtrl.index);
 router.get("/add", drinksCtrl.new);
 router.post("/", drinksCtrl.create);
 router.get("/:id", drinksCtrl.show);
+router.delete("/:id", drinksCtrl.remove);
 
 module.exports = router;

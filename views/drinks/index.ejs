@@ -10,6 +10,9 @@
                 <li class="drink-name"><%= d.title %></td>
                 <li class="details"><a href="/drinks/<%= d._id %>">Details</a></li>
                 </ul>
+                <form id="delete" name="_method" method="POST" action="/drinks/<%= d._id %>/?_method=DELETE">
+                    <input id="x" type="submit" value="X">
+                </form>
             </div>
             <% }); %>
 
