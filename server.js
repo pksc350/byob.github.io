@@ -8,6 +8,9 @@ const app = express();
 //requiring the database
 require("./config/database");
 
+//requiring env
+require("dotenv").config();
+
 //Require Routes
 const homeRouter = require("./routes/homescreen");
 const drinksRouter = require("./routes/drinks");
