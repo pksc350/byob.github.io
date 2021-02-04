@@ -14,6 +14,15 @@
 
 <div class="container">
 <body id="home-page">
+
+<nav>    
+  <% if (user) { %>
+  <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+<% } else { %>
+  <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+<% } %>
+</nav>
+
     <div class="transbox">
         <img src="../public/images/bartender.jpeg" id="bartender-img">
     <h1 class="app-title" id="be">Be</h1>

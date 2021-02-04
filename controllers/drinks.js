@@ -1,4 +1,5 @@
 const Drink = require("../models/drink");
+const User = require("../models/User");
 
 module.exports = {
   index,
@@ -9,8 +10,8 @@ module.exports = {
 };
 
 function index(req, res) {
-  Drink.find({}, function (err, drinks) {
-    res.render("drinks/index", { title: "All Drinks", drinks });
+  User.find({}, function (err, drinks) {
+    res.render("drinks/index", { title: "All Drinks", drinks, user: req.user });
   });
 }
 

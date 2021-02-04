@@ -1,3 +1,6 @@
+//requiring env
+require("dotenv").config();
+
 const express = require("express");
 const methodOverride = require("method-override");
 const session = require("express-session");
@@ -12,9 +15,6 @@ require("./config/database");
 
 //require passport
 require("./config/passport");
-
-//requiring env
-require("dotenv").config();
 
 //Set Views
 app.set("view engine", "ejs");
