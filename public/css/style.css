@@ -23,14 +23,16 @@ body {
   padding-top: 20px;
 }
 
-.container {
-  height: 100px;
-  width: 500px;
+div.container {
+  min-height: 100px;
+  min-width: 500px;
+  overflow: auto;
   background-color: #5cadbe;
   margin-top: 10px;
   margin-left: 200px;
   border-radius: 25px;
   align-content: center;
+  display: table;
 }
 
 .drink-data {
@@ -45,7 +47,7 @@ ul {
 .drink-name {
   position: absolute;
   font-family: "kalam";
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .details {
@@ -84,4 +86,14 @@ h1 {
 .details a:active {
   color: white;
   font-family: "yusei magic";
+}
+
+#x {
+  background-color: black;
+  color: white;
+  height: 25px;
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
