@@ -96,3 +96,38 @@ label {
 h3 {
   text-align: center;
 }
+
+.reviewtable {
+  display: flex;
+  flex-flow: column;
+  margin-left: 150px;
+}
+
+#tablehead {
+  font-family: "kalam";
+  font-size: 28px;
+}
+
+.reviewcont {
+  border: 1px solid black;
+  padding: 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.reviewrate {
+  border: 1px solid black;
+  padding: 8px;
+  width: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+#number {
+  margin-left: 23px;
+}
+
+#outof {
+  font-size: 15px;
+  margin-left: 10px;
+}

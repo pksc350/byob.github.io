@@ -41,14 +41,24 @@
 </section>
 
 <% if (drink.reviews.length) { %>
+    <div class="reviewtable container">
     <table>
+        <thead>
+            <tr id="tablehead">
+                <td>How was it?</td>
+                <td>Rating</td>
+            </tr>
+        </thead>
+        <tbody>
         <% drink.reviews.forEach(function(r){ %>
-        <tr>
-            <td><%= r.content %></td>
-            <td><%= r.rating %></td>
+        <tr class="fullreview">
+            <td class="reviewcont"><%= r.content %></td>
+            <td class="reviewrate"><span id="number"><%= r.rating %></span> <br> <span id="outof">out of 5</span></td></td>
         </tr>
         <% }); %>
+    </tbody>
     </table>
+    </div>
 
     <% } else { %>
         <h3>No reviews yet</h3>
