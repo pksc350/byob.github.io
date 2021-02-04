@@ -5,16 +5,8 @@
 }
 
 body {
-  background-image: url("https://miro.medium.com/max/11520/1*wRSrqe_WdsPsv4XdHDou6Q.jpeg");
-  background-size: cover;
-  width: auto;
-}
-
-div.transbox {
-  background-color: #ffffff;
-  opacity: 0.6;
-  background-size: cover;
-  height: 800px;
+  background-image: url("../images/BYOB.png");
+  background-size: 100%;
 }
 
 div.transbox h1 {
@@ -68,4 +60,8 @@ div.transbox h1 {
   height: 300px;
   margin-left: 400px;
   margin-top: 25px;
+}
+
+#google {
+  color: burlywood;
 }
