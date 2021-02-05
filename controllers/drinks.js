@@ -9,10 +9,23 @@ module.exports = {
   remove,
 };
 
+// function index(req, res) {
+//   User.find({}, function (err, drinks) {
+//     res.render("drinks/index", { title: "All Drinks", drinks, user: req.user });
+//   });
+// }
+
 function index(req, res) {
-  User.find({}, function (err, drinks) {
-    res.render("drinks/index", { title: "All Drinks", drinks, user: req.user });
-  });
+  User.find({})
+    .populate("drinks")
+    .exec(function (err, drinks) {
+      if (err) return console.log(err);
+      res.render("drinks/index", {
+        title: "All Drinks",
+        drinks,
+        user: req.user,
+      });
+    });
 }
 
 function newDrink(req, res) {

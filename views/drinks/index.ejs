@@ -5,7 +5,7 @@
 <h1 id="drinks-list">All Drinks</h1>
 
 
-        <% drinks.forEach(function(d){ %>
+        <% user.drinks.forEach(function(d){ %>
             <div class="drink container">
                 <form id="delete" name="_method" method="POST" action="/drinks/<%= d._id %>/?_method=DELETE">
                     <input id="x" type="submit" value="X">

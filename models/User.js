@@ -9,7 +9,7 @@ const userSchema = new Schema({
   avatar: String,
   drinks: [
     {
-      type: mongoose.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "Drink",
     },
   ],
