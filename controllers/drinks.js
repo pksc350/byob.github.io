@@ -19,10 +19,18 @@ function newDrink(req, res) {
   res.render("drinks/new", { title: "Add Drink" });
 }
 
-function create(req, res) {
+// function create(req, res) {
+//   const drink = new Drink(req.body);
+//   drink.save(function (err) {
+//     if (err) return console.log(err);
+//     res.redirect("/drinks");
+//   });
+// }
+
+function create(req, res, next) {
   const drink = new Drink(req.body);
-  drink.save(function (err) {
-    if (err) return console.log(err);
+  req.user.drinks.push(drink);
+  req.user.save(function (err) {
     res.redirect("/drinks");
   });
 }
