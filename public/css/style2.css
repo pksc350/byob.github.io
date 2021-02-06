@@ -131,3 +131,11 @@ h3 {
   font-size: 15px;
   margin-left: 10px;
 }
+
+#rating {
+  width: 50px;
+}
+
+#review {
+  width: 100px;
+}
