@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "- The BYOB app is designed to let users share and review their favorite cocktail/mocktail recipes - Drinks can be well-known, or user-created - Users can log-in via Google/Gmail - Users will be able to:   - Submit recipes   - Update and delete their submit recipes   - Review and rate recipes   - View all recipes submit by other users",
   "main": "server.js",
-  "engines":{"node": "15.0.1",
-  "npm": "7.5.2"
-  },
   "scripts": {
     "start": "node server.js"
   },
