@@ -9,7 +9,7 @@ let addIngredient = addIng.addEventListener("click", (evt) => {
   let listItm = document.createElement("div");
   listItm.innerHTML =
     '<input type="text" name="ingredients" id="ingbox" class="type-here">';
-  document.getElementById("ingredients").appendChild(listItm);
+  document.getElementById("new-ing").appendChild(listItm);
 });
 
 let addDirection = addStep.addEventListener("click", (evt) => {
