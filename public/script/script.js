@@ -9,12 +9,12 @@ let addIngredient = addIng.addEventListener("click", (evt) => {
   let listItm = document.createElement("div");
   listItm.innerHTML =
     '<input type="text" name="ingredients" id="ingbox" class="type-here">';
-  document.getElementById("new-ing").appendChild(listItm);
+  document.getElementById("ingredients").appendChild(listItm);
 });
 
 let addDirection = addStep.addEventListener("click", (evt) => {
   let listItm = document.createElement("div");
   listItm.innerHTML =
     '<input type="text" name="directions" id="dirbox" class="type-here">';
-  document.getElementById("new-dir").appendChild(listItm);
+  document.getElementById("directions").appendChild(listItm);
 });
