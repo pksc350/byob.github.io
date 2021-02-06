@@ -26,6 +26,10 @@ const drinkSchema = new Schema({
     required: true,
   },
   reviews: [reviewSchema],
+  user: {
+    type: mongoose.Types.ObjectId,
+    ref: "User",
+  },
 });
 
 module.exports = mongoose.model("Drink", drinkSchema);

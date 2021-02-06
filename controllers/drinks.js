@@ -16,9 +16,10 @@ module.exports = {
 // }
 
 function index(req, res) {
-  User.find({})
-    .populate("drinks")
+  Drink.find({})
+    .populate("user")
     .exec(function (err, drinks) {
+      console.log(drinks);
       if (err) return console.log(err);
       res.render("drinks/index", {
         title: "All Drinks",
@@ -40,11 +41,17 @@ function newDrink(req, res) {
 //   });
 // }
 
-function create(req, res, next) {
-  const drink = new Drink(req.body);
-  req.user.drinks.push(drink);
-  req.user.save(function (err) {
-    res.redirect("/drinks");
+function create(req, res) {
+  req.body.user = req.user._id;
+  console.log(req.user);
+  Drink.create(req.body, (err, createDrink) => {
+    if (err) return console.log(err);
+    User.findById(createDrink.user, (err, foundUser) => {
+      if (err) return console.log(err);
+      foundUser.drinks.push(createDrink._id);
+      foundUser.save();
+      res.redirect("/drinks");
+    });
   });
 }
 
