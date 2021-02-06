@@ -9,12 +9,6 @@ module.exports = {
   remove,
 };
 
-// function index(req, res) {
-//   User.find({}, function (err, drinks) {
-//     res.render("drinks/index", { title: "All Drinks", drinks, user: req.user });
-//   });
-// }
-
 function index(req, res) {
   Drink.find({})
     .populate("user")
