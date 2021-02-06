@@ -82,4 +82,4 @@
 
 ![](public/images/ERD.png)
 
-[Check out BYOB](byob.github.io)
+[Check out BYOB](https://damp-woodland-76724.herokuapp.com/)
