@@ -6,7 +6,7 @@ const methodOverride = require("method-override");
 const session = require("express-session");
 const passport = require("passport");
 
-// const PORT = 3300;
+const PORT = process.env.PORT || 3300;
 
 const app = express();
 
@@ -46,6 +46,6 @@ app.use("/drinks", drinksRouter);
 app.use("/", reviewsRouter);
 
 //App listen
-// app.listen(PORT, () => {
-//   console.log(`Express is listening at port ${PORT}`);
-// });
+app.listen(PORT, () => {
+  console.log(`Express is listening at port ${PORT}`);
+});
